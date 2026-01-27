@@ -32,8 +32,8 @@ body {
 .drag-region {
   margin-left: 10px;
   font-weight: bold;
-  font-size: 20px;
-  color: #789dbc;
+  font-size: 16px;
+  color: #fff9f9;
   flex-grow: 1;
 }
 
@@ -53,9 +53,9 @@ body {
 }
 
 .window-controls img {
-  width: 50px;
-  height: 50px;
-  filter: drop-shadow(1px 1px #ffc2d1);
+  width: 35px;
+  height: 35px;
+  filter: drop-shadow(1px 1px #fff9f9);
 }
 
 .cover-image {
@@ -71,7 +71,7 @@ body {
 .img-button {
   background: none;
   border: none;
-  padding: 5px;
+  padding: 1px;
   cursor: pointer;
 }
 
@@ -86,8 +86,12 @@ body {
 }
 
 .player-container {
-  padding: 20px;
-  width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    margin-top: 155px;
 }
 
 .pixel-frame {
@@ -101,7 +105,7 @@ body {
 
 .song-title {
   font-size: 16px;
-  color: #d080aa;
+  color: #fff9f9;
   margin-bottom: 10px;
 }
 
