@@ -1,0 +1,22 @@
+{
+  "name": "git-init-sheraz",
+  "version": "1.0.0",
+  "description": "Hello, World!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "command to run here"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crbx13/git-init-sheraz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/crbx13/git-init-sheraz/issues"
+  },
+  "homepage": "https://github.com/crbx13/git-init-sheraz#readme"
+}
