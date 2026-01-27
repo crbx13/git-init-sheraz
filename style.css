@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  font-family: "Caudex", serif;
   display: flex;
   justify-content: center;
   align-items: center;
