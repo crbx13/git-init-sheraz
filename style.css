@@ -7,7 +7,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: "Caudex", serif;
-  display: flex;
+  display: cover;
   justify-content: center;
   align-items: center;
   height: 100vh;
