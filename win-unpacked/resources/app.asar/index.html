@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AngelSlayer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title-bar">
+            <div class="drag-region">AngelSlayer</div>
+            <div class="window-controls">
+                <button class="min-btn" title="Minimize">
+                    <img src="icon-min.png" alt="Minimize">
+                </button>
+                <button class ="close-btn" title="Close">
+                    <img src="icon-close.png" alt="Close">
+                </button>
+            </div>
+            <div class="player-container">
+                <div class="pixel-frame">
+                    <div class="screen" id="dropArea">
+                        <img id="coverImage" src="default-cover.png" alt="Cover Image" class="cover-image"/>
+                        <p class="song-title">drag your song here</p>
+                        <div class="controls">
+                            <button id="prevBTN" class="img-button"><img src="btn-prev.png" alt="Previous"></button>
+                            <button id="prevPause" class="img-button"><img id="playPauseIcon" src="btn-play.png" alt="PlayPause"></button>
+                            <button id="nextBTN" class="img-button"><img src="btn-next.png" alt="Next"></button>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+            </div>
+            <input type="file" id="fileInput" accept="audio/*" style="display: none;">
+            <audio id="audio"></audio>
+        </div>
+    
+    </body>    
+</html>
