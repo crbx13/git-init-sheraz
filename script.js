@@ -61,3 +61,17 @@ function loadSong(index) {
     isPlaying = false;
     PlayPauseIcon.src = "btn-play.png";
 }
+
+nextBtn.addEventListener("click", () => {
+    if (playlist.length === 0) return;
+    currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+    loadSong(currentIndex);
+});
+
+let isPlaying = false;
+console.log('electronAPI:', window.electronAPI);
+console.log('window.electronAPI:', window.electronAPI);
+    
+fileInput.addEventListener("change", function () {
+    handleFiles(this.files);
+});
