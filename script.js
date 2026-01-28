@@ -19,7 +19,22 @@ const coverImages = [
   "cover6.png",
   "cover7.png",
   "cover8.png",
-  "cover9.png"
+  "cover9.png",
+  "cover10.png",
+  "cover11.png",
+  "cover12.png",
+  "cover13.png",
+  "cover14.png",
+  "cover15.png",
+  "cover16.png",
+  "cover17.png",
+  "cover18.png",
+  "cover19.png",
+  "cover20.png",
+  "cover21.png",
+  "cover22.png",
+  "cover23.png",
+  "cover24.png"
 ];
 
 function handleFiles(files) {
