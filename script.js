@@ -89,3 +89,18 @@ dropArea.addEventListener("drop", (e) => {
         handleFiles(e.dataTransfer.files);
     }
 });
+
+const PlayPauseIcon = document.getElementById("playPauseIcon");
+
+PlayPauseBtn.addEventListener("click", () => {
+    if (!audio.src) return;
+
+    if (isPlaying) {
+        audio.pause();
+        PlayPauseIcon.src = "btn-play.png";
+    } else {
+        audio.play();
+        PlayPauseIcon.src = "btn-pause.png";
+    }
+    isPlaying = !isPlaying;
+});
