@@ -75,3 +75,17 @@ console.log('window.electronAPI:', window.electronAPI);
 fileInput.addEventListener("change", function () {
     handleFiles(this.files);
 });
+
+dropArea.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    dropArea.classList.remove("dragover");
+});
+dropArea.addEventListener("dragleave", () => {
+    dropArea.classList.add("dragover");
+});
+dropArea.addEventListener("drop", (e) => {
+    e.preventDefault();
+    if (e.dataTransfer.files.length > 0) {
+        handleFiles(e.dataTransfer.files);
+    }
+});
