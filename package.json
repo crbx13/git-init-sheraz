@@ -1,35 +1,25 @@
 {
   "name": "git-init-sheraz",
+  "productName": "AngelSlayer",
   "version": "1.0.0",
+  "description": "an electron app",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/crbx13/git-init-sheraz.git"
-  },
-  "keywords": [
-    "electron",
-    "virtual music player",
-    "pixel art",
-    "desktop app"
-  ],
-  "author": "crbx13",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/crbx13/git-init-sheraz/issues"
-  },
-  "homepage": "https://github.com/crbx13/git-init-sheraz#readme",
   "devDependencies": {
-    "electron": "^40.0.0",
+    "electron": "^8.0.2",
+    "electron-builder": "^22.3.2"
   },
-   "build": {
-    "appId": "com.crbx13.AngelSlayer",
-    "productName": "AngelSlayer",
-    "mac": {
-      "icon": "logo.icns"
+  "build": {
+    "appId": "com.electron.app",
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "unicode": false,
+      "artifactName": "angelslayer.exe"
     }
   }
 }
