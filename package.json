@@ -1,7 +1,6 @@
 {
   "name": "git-init-sheraz",
   "version": "1.0.0",
-  "description": "Hello, World!",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
@@ -10,8 +9,13 @@
     "type": "git",
     "url": "git+https://github.com/crbx13/git-init-sheraz.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "electron",
+    "virtual music player",
+    "pixel art",
+    "desktop app"
+  ],
+  "author": "crbx13",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -19,6 +23,14 @@
   },
   "homepage": "https://github.com/crbx13/git-init-sheraz#readme",
   "devDependencies": {
-    "electron": "^40.0.0"
+    "electron": "^40.0.0",
+    "electron-builder": "^26.0.12"
+  },
+   "build": {
+    "appId": "com.crbx13.AngelSlayer",
+    "productName": "AngelSlayer",
+    "mac": {
+      "icon": "logo.icns"
+    }
   }
 }
