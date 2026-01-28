@@ -1,25 +1,28 @@
 {
-  "name": "git-init-sheraz",
-  "productName": "AngelSlayer",
+  "name": "crbx13",
+  "description": "A virtual music player desktop app.",
   "version": "1.0.0",
-  "description": "an electron app",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "dist": "electron-builder"
+    "start": "electron ."
   },
+  "keywords": [
+    "electron",
+    "virtual music player",
+    "pixel art",
+    "desktop app"
+  ],
+  "author": "crbx13",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^8.0.2",
-    "electron-builder": "^22.3.2"
+    "electron": "^29.0.0",
+    "electron-builder": "^26.0.12"
   },
   "build": {
-    "appId": "com.electron.app",
-    "win": {
-      "target": "portable"
-    },
-    "portable": {
-      "unicode": false,
-      "artifactName": "angelslayer.exe"
+    "appId": "com.crbx13.AngelSlayer",
+    "productName": "AngelSlayer",
+    "mac": {
+      "icon": "logo.ico"
     }
   }
 }
