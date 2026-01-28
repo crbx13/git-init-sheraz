@@ -12,8 +12,14 @@ let currentIndex = -1;
 
 const coverImages = [
   "default-cover.png",
-  "default-cover1.png",
-  "default-cover2.png"
+  "default-cover2.png",
+  "default-cover3.png",
+  "cover4.png",
+  "cover5.png",
+  "cover6.png",
+  "cover7.png",
+  "cover8.png",
+  "cover9.png"
 ];
 
 function handleFiles(files) {
