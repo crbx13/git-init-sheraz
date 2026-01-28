@@ -15,4 +15,3 @@ const coverImages = [
     "default-cover1.png",
     "default-cover2.png"
 ];
-]
