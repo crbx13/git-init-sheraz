@@ -1,3 +1,2 @@
-Hello, World!
-
-This is a project.
+Music player que j'ai créé, téléchargez vos musiques en mp3 et cliquez sur "drag your song here".
+Pour ajouter une autre musique, cliquez sur le titre de la musique actuelle etc...
