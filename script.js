@@ -174,24 +174,3 @@ function attachWindowControlListeners() {
 window.addEventListener('DOMContentLoaded', () => {
   attachWindowControlListeners();
 });
-
-function formatTime(seconds) {
-  if (isNaN(seconds)) return "0:00";
-  const min = Math.floor(seconds / 60);
-  const sec = Math.floor(seconds % 60).toString().padStart(2, '0');
-  return `${min}:${sec}`;
-}
-
-audio.addEventListener("loadedmetadata", () => {
-  durationEl.textContent = formatTime(audio.duration);
-});
-
-progressContainer.addEventListener("click", (e) => {
-  if (!audio.duration) return;
-
-  const rect = progressContainer.getBoundingClientRect();
-  const clickX = e.clientX - rect.left;
-  const percentage = clickX / rect.width;
-
-  audio.currentTime = percentage * audio.duration;
-});
