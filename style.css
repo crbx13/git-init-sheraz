@@ -41,7 +41,7 @@ body {
   margin-left: 130px;
   flex-grow: 1;
   display: flex;
-  -webkit-app-region: drag;
+  -webkit-app-region: no-drag;
 }
 
 .window-controls button {
