@@ -185,3 +185,13 @@ function formatTime(seconds) {
 audio.addEventListener("loadedmetadata", () => {
   durationEl.textContent = formatTime(audio.duration);
 });
+
+progressContainer.addEventListener("click", (e) => {
+  if (!audio.duration) return;
+
+  const rect = progressContainer.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+  const percentage = clickX / rect.width;
+
+  audio.currentTime = percentage * audio.duration;
+});
