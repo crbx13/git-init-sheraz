@@ -144,8 +144,12 @@ playPauseBtn.addEventListener("click", () => {
 });
 
 audio.addEventListener("timeupdate", () => {
+  if (!audio.duration) return;
+
   const progress = (audio.currentTime / audio.duration) * 100;
   progressBar.style.width = `${progress}%`;
+
+  currentTimeEl.textContent = formatTime(audio.currentTime);
 });
 
 function attachWindowControlListeners() {
