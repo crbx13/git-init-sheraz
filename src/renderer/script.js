@@ -6,6 +6,9 @@ const dropArea = document.getElementById("dropArea");
 const coverImage = document.getElementById("coverImage");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
+const currentTimeEl = document.getElementById("currentTime");
+const durationEl = document.getElementById("duration");
+const progressContainer = document.querySelector(".progress-bar-container");
 
 let playlist = [];
 let currentIndex = -1;
